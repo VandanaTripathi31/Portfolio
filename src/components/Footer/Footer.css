@@ -1,0 +1,87 @@
+/* Footer.css */
+.footer {
+  /* background: #1e1e1e; Dark background for contrast */
+  color: #ffffff; /* White text for readability */
+  text-align: center;
+  margin: 50px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer menu styles */
+.footer-menu {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Footer menu links */
+.footer-menu a {
+  color: white; /* White links for better readability */
+  text-decoration: none;
+  margin: 0 20px;
+  transition: color 0.3s;
+}
+
+/* Hover effect on links */
+.footer-menu a:hover {
+  color: #b415ff; /* Gradient hover effect */
+}
+
+/* Divider styles */
+.divider {
+  color: #ffffff; /* Divider color */
+  margin: 10px 0;
+}
+
+/* Footer text styles */
+.footer-text {
+  font-size: 14px;
+  color: #aaaaaa; /* Lighter text for copyright notice */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    margin: 30px 20px; /* Adjust margin on smaller screens */
+    padding: 20px 15px; /* Adjust padding */
+  }
+
+  .footer-menu {
+    font-size: 16px; /* Smaller font size on mobile */
+    margin-bottom: 12px; /* Increase spacing between menu items */
+  }
+
+  .footer-menu a {
+    margin: 0 10px; /* Decrease margin for smaller screens */
+  }
+
+  .footer-text {
+    font-size: 12px; /* Smaller text on mobile */
+    margin-top: 15px; /* Add spacing between menu and footer text */
+  }
+}
+
+/* For very small screens like phones in portrait mode */
+@media (max-width: 480px) {
+  .footer {
+    margin: 20px 10px; /* Adjust margin */
+    padding: 15px 10px; /* Adjust padding */
+  }
+
+  .footer-menu {
+    font-size: 14px; /* Further reduce font size */
+    margin-bottom: 10px;
+  }
+
+  .footer-menu a {
+    margin: 0 5px; /* Tighten link spacing */
+  }
+
+  .footer-text {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,278 @@
+/* General Layout */
+.mywork {
+  /* background-color: #0d1117; */
+  color: #c9d1d9;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.mywork-title {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.mywork-title h1 {
+  /* font-size: 2.5rem; */
+  /* margin-bottom: 10px; */
+  color: white;
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.mywork-title img {
+  position: absolute;
+  width: 300px;
+  bottom: 0;
+  right: 1;
+  z-index: -1;
+}
+
+/* Timeline Container */
+.timeline-container {
+  position: relative;
+  padding: 20px 0;
+}
+
+.vertical-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #444c56;
+  transform: translateX(-50%);
+}
+
+/* Timeline Items */
+.timeline-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-item.left {
+  flex-direction: row;
+}
+
+.timeline-item.right {
+  flex-direction: row-reverse;
+}
+
+/* Image Styling */
+.project-image-container {
+  position: relative;
+  width: 45%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(223, 137, 8, 0.5), 0 6px 20px rgba(181, 21, 255, 0.493);
+
+  /* box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6); Box-shadow for image */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image-container:hover .project-image {
+  transform: scale(1.05);
+  /* box-shadow: 0 4px 15px rgba(223, 137, 8, 0.5), 0 6px 20px rgba(180, 21, 255, 0.4); */
+
+  /* box-shadow: 0 12px 30px rgba(0, 123, 255, 0.8); Intense box-shadow on hover */
+
+  /* box-shadow: 0 8px 20px rgba(0, 123, 255, 0.8); */
+}
+
+.hover-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-image-container:hover .hover-buttons {
+  display: flex;
+}
+
+.hover-buttons .btn {
+  background-color: #58a6ff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.hover-buttons .btn:hover {
+  background-color: #004080;
+}
+
+/* Project Content */
+.project-content {
+  width: 45%;
+  text-align: left;
+}
+
+.project-title {
+  font-size: 2rem;
+  color: #f4f4f4;
+  /* font-size: 50px; */
+  font-weight: 600;
+  /* background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 100%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #a8b3cf;
+  margin-bottom: 15px;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-stack span {
+  background-color: rgba(88, 166, 255, 0.2);
+  color: #58a6ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.horizontal-dot {
+  width: 14px; /* Increased size */
+  height: 14px; /* Increased size */
+  background-color: #58a6ff;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.8); /* Glow effect for the dot */
+}
+.horizontal-line {
+  position: relative;
+  top: 50%;
+  width: 10%; /* Shorter line */
+  height: 2px;
+  background-color: #444c56;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.icon-link {
+  color: white;
+  
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #007bff; /* Change to your desired hover color */
+  transform: scale(1.2);
+}
+
+.icon {
+  cursor: pointer;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  /* Mywork Section */
+  .mywork {
+    padding: 30px 10px;
+  }
+
+  .mywork-title h1 {
+    font-size: 50px; /* Reduce title size */
+  }
+
+  .mywork-title img {
+    width: 200px; /* Adjust pattern size */
+    bottom: -10px;
+  }
+
+  /* Timeline Items */
+  .timeline-container {
+    padding: 10px 0;
+  }
+
+  .timeline-item {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center-align content */
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    flex-direction: column; /* Ensure consistent stacking */
+  }
+
+  /* Image Styling */
+  .project-image-container {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Add spacing */
+  }
+
+  /* Project Content */
+  .project-content {
+    width: 100%; /* Full width for content */
+    text-align: center; /* Center-align text */
+  }
+
+  .project-title {
+    font-size: 1.5rem; /* Reduce title size */
+  }
+
+  .project-description {
+    font-size: 0.9rem; /* Reduce description size */
+  }
+
+  /* Tech Stack */
+  .tech-stack {
+    justify-content: center; /* Center-align tech stack */
+  }
+
+  /* Horizontal Line and Dot */
+  .horizontal-line {
+    display: none; /* Hide horizontal lines on mobile */
+  }
+
+  /* Social Icons */
+  .hover-icons {
+    gap: 10px; /* Reduce icon spacing */
+  }
+
+  .icon-link {
+    font-size: 20px; /* Reduce icon size */
+  }
+}

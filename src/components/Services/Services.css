@@ -1,0 +1,371 @@
+.Services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 17px;
+}
+
+.services-title {
+  position: relative;
+}
+.services-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+.services-title img {
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* Container */
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.card:hover {
+  border: 2px solid #ff00ff;
+  background-image: linear-gradient(45deg, #3d0028, #582300);
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+/* Card Styling */
+.card {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: 0.4s;
+  cursor: pointer;
+  /* opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; */
+}
+.card:nth-child(1) {
+  animation-name: slideInLeft;
+}
+
+.card:nth-child(2) {
+  animation-name: slideInTop;
+}
+
+.card:nth-child(3) {
+  animation-name: slideInRight;
+}
+
+/* .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+ } */
+
+.card h1 {
+  font-size: 45px;
+  font-weight: 800;
+  background: linear-gradient(270deg, #df8908 50%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  gap: 20px;
+  justify-items: center;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #0f1624;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-item:hover {
+  transform: scale(1.05);
+  background: #232946;
+}
+
+.icon-item i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.icon-item span {
+  font-size: 1rem;
+  color: #d4d4d8;
+}
+/* Python Icon */
+.custom-python {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Express JS Icon */
+.custom-express {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Figma Icon */
+.custom-figma {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Postman Icon */
+.custom-postman {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c2/Postman_%28software%29.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.custom-cloudinary {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://res.cloudinary.com/cloudinary-marketing/image/upload/v1663599696/logo/cloudinary_blue_600x400.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* Frontend Icons */
+.fab.fa-html5 {
+  color: #e34c26; /* HTML official color */
+}
+
+.fab.fa-css3-alt {
+  color: #1572b6; /* CSS official color */
+}
+
+.fab.fa-js {
+  color: #f7df1e; /* JavaScript official color */
+}
+
+.fab.fa-bootstrap {
+  color: #7952b3; /* Bootstrap official color */
+}
+
+.fab.fa-react {
+  color: #61dafb; /* React official color */
+}
+
+.fas.fa-water {
+  color: #38bdf8; /* Tailwind CSS official color */
+}
+
+.fas.fa-magic {
+  color: #ffa500; /* Magic UI - customized color */
+}
+
+/* Backend Icons */
+.fab.fa-java {
+  color: #007396; /* Java/SpringBoot official color */
+}
+
+.fab.fa-node-js {
+  color: #68a063; /* NodeJS official color */
+}
+
+.fas.fa-database {
+  color: #00758f; /* MySQL official color */
+}
+
+.fas.fa-leaf {
+  color: #47a248; /* MongoDB official color */
+}
+
+.fab.fa-google {
+  color: #ea4335; /* Firebase official color */
+}
+/* Others */
+.fas.fa-cloud {
+  color: #29abe2; /* REST API - customized color */
+}
+
+.fab.fa-git {
+  color: #f05032; /* Git official color */
+}
+
+.fas.fa-globe {
+  color: #00c7b7; /* Netlify official color */
+}
+
+.fas.fa-cloud {
+  color: #4f5b93; /* Vercel official color */
+}
+
+.fas.fa-code {
+  color: #007acc; /* VS Code official color */
+}
+/* 
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} */
+
+
+/* General Fix for Overflow */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+@media (max-width: 768px) {
+  .Services {
+    gap: 40px;
+    margin: 40px 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .services-title h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .services-title img {
+    width: 150px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .card {
+    width: 100%; /* Full width within container */
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .card h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .icon-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 icons per row */
+    gap: 15px;
+    justify-items: center;
+  }
+
+  .icon-item {
+    padding: 10px;
+    width: 80px;
+    height: 80px; /* Make icon items square for uniformity */
+  }
+
+  .icon-item i {
+    font-size: 1.5rem; /* Smaller icons */
+  }
+
+  .icon-item span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .services-title img {
+    width: 100px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr; /* Still single column */
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%; /* Full width */
+    padding: 15px;
+  }
+
+  .card h1 {
+    font-size: 24px;
+  }
+
+  .icon-grid {
+    grid-template-columns: repeat(2, 1fr); /* Keep 2 icons per row */
+    gap: 10px;
+  }
+
+  .icon-item {
+    padding: 8px;
+    width: 70px;
+    height: 70px; /* Smaller for mobile */
+  }
+
+  .icon-item i {
+    font-size: 1.2rem; /* Adjust icon size */
+  }
+
+  .icon-item span {
+    font-size: 0.7rem; /* Smaller text */
+  }
+}
