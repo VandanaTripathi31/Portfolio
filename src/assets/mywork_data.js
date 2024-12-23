@@ -22,7 +22,7 @@ const mywork_data = [
         description: "An engaging e-commerce platform specializing in adorable teddy bears, featuring a seamless shopping experience with AI-powered chatbot support also with (sign-in/register), a contact page for inquiries.",
         tech_stack: ["#reactjs", "#javascript", "#tailwindcss", "#html", "#css"],
         github_link: "https://github.com/VandanaTripathi31/TEDDY",
-        live_demo_link: "https://project-two.example.com"
+        live_demo_link: "https://molly-bears.netlify.app/"
     },
     {
         w_no: 3,
